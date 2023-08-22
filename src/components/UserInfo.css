@@ -1,0 +1,29 @@
+.user-info {
+    position: absolute;
+    bottom: 1%;
+    right: 0.5%;
+    background-color: rgb(47, 47, 47);
+    border-radius: 6px;
+    outline: rgb(32, 32, 32) solid 3px;
+}
+
+.user-info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    padding: 7px;
+}
+
+.user-info-item {
+    font-size: 1rem;
+    font-family: "Rubik", sans-serif;
+}
+
+.user-info-item-title {
+    font-weight: 500;
+}
+
+.user-info-item-content {
+    font-weight: 400;
+}
