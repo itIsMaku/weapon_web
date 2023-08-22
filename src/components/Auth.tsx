@@ -13,7 +13,7 @@ export default function Auth({
         let formJson = Object.fromEntries(formData.entries());
         let text = formJson["auth-key"] as string;
         axios
-            .get("http://188.75.130.253:27801/api/auth", {
+            .get("http://54.38.215.63:8080/api/auth", {
                 headers: {
                     "Content-Type": "application/json",
                     authorization: text,
@@ -24,7 +24,7 @@ export default function Auth({
                 if (res.status === 200) {
                     let user = res.data;
                     axios
-                        .get("http://188.75.130.253:27801/api/factions")
+                        .get("http://54.38.215.63:8080/api/factions")
                         .then((res) => {
                             success(text, user, res.data);
                         });

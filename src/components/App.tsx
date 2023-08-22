@@ -44,12 +44,12 @@ export default function App() {
         for (let property of ["invoices", "crafting", "shop"]) {
             console.log(property);
             console.log(
-                `http://188.75.130.253:27801/api/faction/${faction}/${property}`
+                `http://54.38.215.63:8080/api/faction/${faction}/${property}`
             );
             let p = new Promise((resolve, reject) => {
                 axios
                     .get(
-                        `http://188.75.130.253:27801/api/faction/${faction}/${property}`,
+                        `http://54.38.215.63:8080/api/faction/${faction}/${property}`,
                         {
                             headers: {
                                 "Content-Type": "application/json",
